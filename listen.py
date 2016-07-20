@@ -14,7 +14,7 @@ while True:
             f.write(audio.get_wav_data())
 
         try:
-            print(r.recognize_google(audio))
+            print(r.recognize_google(audio, language='pl-PL', show_all=False))
         except sr.UnknownValueError:
             print("didn't hear anything familiar")
             pass
